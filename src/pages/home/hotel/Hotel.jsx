@@ -7,8 +7,6 @@ import Navbar from '../../../navbar/Navbar'
 import './hotel.css'
 
 
-
-
 const Hotel = () => {
 
   const photos = [
