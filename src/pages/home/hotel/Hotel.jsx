@@ -6,6 +6,9 @@ import MailList from '../../../components/MailList/MailList'
 import Navbar from '../../../navbar/Navbar'
 import './hotel.css'
 
+
+
+
 const Hotel = () => {
 
   const photos = [
