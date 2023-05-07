@@ -5,7 +5,7 @@ import Header from '../../../components/header/Header'
 import MailList from '../../../components/MailList/MailList'
 import Navbar from '../../../navbar/Navbar'
 import './hotel.css'
-
+//import List from '../list/List'
 
 const Hotel = () => {
 

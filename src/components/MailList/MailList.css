@@ -42,5 +42,6 @@
 }
 
 .signUp:hover {
-    background-color: blueviolet;
+    background-color:rgb(251, 20, 20);
+    color:yellow;
 }
