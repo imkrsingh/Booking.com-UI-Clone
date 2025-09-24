@@ -9,12 +9,24 @@ import SearchItem from '../../../components/searchItem/SearchItem'
 
 function List () {
 
+  // const location = useLocation();
+  // const [destination]= useState(location.state.destination)
+  // const [date,setDate]= useState(location.state.date)
+  // const [openDate,setOpenDate]= useState(false)
+  // const [options]= useState(location.state.options)
+
   const location = useLocation();
-  const [destination]= useState(location.state.destination)
-  const [date,setDate]= useState(location.state.date)
-  const [openDate,setOpenDate]= useState(false)
-  const [options]= useState(location.state.options)
-   
+  const defaultState = location.state || {
+  destination: '',
+  date: [{ startDate: new Date(), endDate: new Date(), key: 'selection' }],
+  options: { adult: 1, children: 0, room: 1 },
+};
+
+const [destination] = useState(defaultState.destination);
+const [date, setDate] = useState(defaultState.date);
+const [openDate, setOpenDate] = useState(false);
+const [options] = useState(defaultState.options);
+  
   return (
     <div>
       <Navbar/>
